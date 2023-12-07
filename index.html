@@ -11,7 +11,7 @@
 </head>
 <body class="bg-light">
     <!-- nav bar code start here  -->
-    <nav class="navbar navbar-expand-lg bg-danger">
+    <nav class="navbar navbar-expand-lg bg-danger  sticky-top" id="scroll-spy-home">
         <div class="container-fluid">
           <a class="navbar-brand text-white fs-4" href="#">Sawon Ahamed</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,24 +20,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="scrollspyhome">Home</a>
+                <a class="nav-link nav-active text-white fw-bold" aria-current="page" href="#home-scroll">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Products</a>
+                <a class="nav-link text-white fw-bold" href="#about-scroll">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contact Us</a>
+                <a class="nav-link text-white fw-bold" href="#know-me-scroll">Know Me</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#bestproduct-scroll">Best Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#contact-scroll">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex justify-" role="search">
@@ -49,10 +44,10 @@
       </nav>
     <!-- nav bar code end here  -->
     <!-- header section start here -->
-    <header id="scrollspyhome">
+    <header data-bs-spy="scroll" data-bs-target="scroll-spy-home">
         <!-- carousel code start here  -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner" id="home-scroll">
               <div class="carousel-item active" data-bs-interval="3000">
                 <img src="images/slider-1.jpg" class="d-block w-100" alt="404">
               </div>
@@ -80,7 +75,10 @@
     <!-- header section end here -->
     <!-- main section start here  -->
     <main>
-      <section class="container mt-5 mb-5">
+      <section class="container mt-5 mb-5" >
+        <div>
+          <p class="h4 my-5 text text-center">New Collection</p>
+        </div>
         <div class="row">
           <div class="col-lg-4">
             <img class="img-fluid" src="images/item-model.jpg" alt="">
@@ -203,7 +201,7 @@
       <!-- main section end here  -->
 
       <!-- secound section start here  -->
-      <section class="container">
+      <section class="container" id="about-scroll">
         <div>
           <p class="h4 text-center">Tranding Product</p>
         </div>
@@ -213,7 +211,7 @@
               <span class="bg-danger text-white rounded px-3">Sale</span>
               <span class="text-danger"><i class="bi bi-code"></i>Compare</span>
             </div>
-            <img class="img-fluid" src="images/item-4.jpg " alt="">
+            <img class="img-fluid" src="images/product-1.jpg " alt="">
             <span class="text-secondary">Jeans Pant</span>
             <p class="h6">100% cotton fabrics</p>
             <div class="d-flex justify-content-between">
@@ -233,7 +231,7 @@
               <span class="bg-danger text-white rounded px-3">Sale</span>
               <span class="text-danger"><i class="bi bi-code"></i>Compare</span>
             </div>
-            <img class="img-fluid" src="images/item-3.jpg " alt="">
+            <img class="img-fluid" src="images/product-2.jpg " alt="">
             <span class="text-secondary">Jeans Pant</span>
             <p class="h6">100% cotton fabrics</p>
             <div class="d-flex justify-content-between">
@@ -253,7 +251,7 @@
               <span class="bg-danger text-white rounded px-3">Sale</span>
               <span class="text-danger"><i class="bi bi-code"></i>Compare</span>
             </div>
-            <img class="img-fluid" src="images/item-2.jpg " alt="">
+            <img class="img-fluid" src="images/product-3.jpg " alt="">
             <span class="text-secondary">Jeans Pant</span>
             <p class="h6">100% cotton fabrics</p>
             <div class="d-flex justify-content-between">
@@ -273,7 +271,7 @@
               <span class="bg-danger text-white rounded px-3">Sale</span>
               <span class="text-danger"><i class="bi bi-code"></i>Compare</span>
             </div>
-            <img class="img-fluid" src="images/item-5 (2).jpg " alt="">
+            <img class="img-fluid" src="images/product-4.jpg " alt="">
             <span class="text-secondary">Jeans Pant</span>
             <p class="h6">100% cotton fabrics</p>
             <div class="d-flex justify-content-between">
@@ -293,7 +291,7 @@
               <span class="bg-danger text-white rounded px-3">Sale</span>
               <span class="text-danger"><i class="bi bi-code"></i>Compare</span>
             </div>
-            <img class="img-fluid" src="images/item-5 (2).jpg " alt="">
+            <img class="img-fluid" src="images/product-5.jpg " alt="">
             <span class="text-secondary">Jeans Pant</span>
             <p class="h6">100% cotton fabrics</p>
             <div class="d-flex justify-content-between">
@@ -313,7 +311,7 @@
               <span class="bg-danger text-white rounded px-3">Sale</span>
               <span class="text-danger"><i class="bi bi-code"></i>Compare</span>
             </div>
-            <img class="img-fluid" src="images/item-5 (2).jpg " alt="">
+            <img class="img-fluid" src="images/product-6.jpg " alt="">
             <span class="text-secondary">Jeans Pant</span>
             <p class="h6">100% cotton fabrics</p>
             <div class="d-flex justify-content-between">
@@ -333,7 +331,7 @@
               <span class="bg-danger text-white rounded px-3">Sale</span>
               <span class="text-danger"><i class="bi bi-code"></i>Compare</span>
             </div>
-            <img class="img-fluid" src="images/item-5 (2).jpg " alt="">
+            <img class="img-fluid" src="images/product-7.jpg " alt="">
             <span class="text-secondary">Jeans Pant</span>
             <p class="h6">100% cotton fabrics</p>
             <div class="d-flex justify-content-between">
@@ -353,7 +351,7 @@
               <span class="bg-danger text-white rounded px-3">Sale</span>
               <span class="text-danger"><i class="bi bi-code"></i>Compare</span>
             </div>
-            <img class="img-fluid" src="images/item-5 (2).jpg " alt="">
+            <img class="img-fluid" src="images/product-8.jpg" alt="">
             <span class="text-secondary">Jeans Pant</span>
             <p class="h6">100% cotton fabrics</p>
             <div class="d-flex justify-content-between">
@@ -375,7 +373,7 @@
       <!-- secound section end here  -->
 
       <!-- third section code start here  -->
-      <section class="container">
+      <section class="container" id="know-me-scroll">
         <div>
           <p class="h4 text-center mb-5">Know Me More</p>
         </div>
@@ -459,46 +457,28 @@
       <!-- third section code end here  -->
 
       <!-- brand section code start here  -->
-      <section class="container my-5">
+      <section class="container my-5" id="bestproduct">
         <div>
           <p class="h4 mb-5">Shop by Brand</p>
         </div>
         <div class="row bg-white">
           <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1">
-            <img class="img-fluid" src="images/brand-1.png" alt="">
+            <img class="img-fluid" src="images/vendor-1.jpg" alt="">
           </div>
           <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1">
-            <img class="img-fluid" src="images/brand-8.png" alt="">
+            <img class="img-fluid" src="images/vendor-2.jpg" alt="">
           </div>
           <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1">
-            <img class="img-fluid" src="images/brand-4.png" alt="">
+            <img class="img-fluid" src="images/vendor-3.jpg" alt="">
           </div>
           <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1">
-            <img class="img-fluid" src="images/brand-5.png" alt="">
+            <img class="img-fluid" src="images/vendor-4.jpg" alt="">
           </div>
           <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1">
-            <img class="img-fluid" src="images/braand-6.png" alt="">
+            <img class="img-fluid" src="images/vendor-5.jpg" alt="">
           </div>
           <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1 ">
-            <img class="img-fluid" src="images/brand-11.png" alt="">
-          </div>
-          <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1 ">
-            <img class="img-fluid" src="images/brand-1.png" alt="">
-          </div>
-          <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1 ">
-            <img class="img-fluid" src="images/brand-4.png" alt="">
-          </div>
-          <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1 ">
-            <img class="img-fluid" src="images/brand-5.png" alt="">
-          </div>
-          <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1 ">
-            <img class="img-fluid" src="images/brand-11.png" alt="">
-          </div>
-          <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1 ">
-            <img class="img-fluid" src="images/braand-6.png" alt="">
-          </div>
-          <div class="col-md-2 border border-1 py-5 text-center align-items-center lh-1 ">
-            <img class="img-fluid" src="images/brand-8.png" alt="">
+            <img class="img-fluid" src="images/vendor-6.jpg" alt="">
           </div>
         </div>
 
@@ -507,7 +487,7 @@
       <!-- brand section code end here  -->
 
       <!-- best selling product code start here  -->
-      <section class="container my-5">
+      <section class="container my-5" id="bestproduct-scroll">
         <p class="h4 mb-5">Best Selling Product</p>
         <div class="row justify-content-between">
           <div class="col-md-5 d-flex align-items-center justify-content-around py-5 px-5 bg-white mb-5">
@@ -599,7 +579,7 @@
       <!-- shop now section code end here  -->
 
       <!-- contact section start here  -->
-      <section class="container my-5">
+      <section class="container my-5" id="contact-scroll">
         <div>
           <p class="h4 text-center mb-5">Order Yout Product</p>
         </div>
